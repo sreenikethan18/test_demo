@@ -1,0 +1,28 @@
+<form class="container">
+    <form  (ngSubmit)="update()">
+      <div class="mb-3">
+        <label for="todoname" class="form-label">Task Name</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="tf.todoname"
+          id="todoname"
+          name="todoname"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="desc" class="form-label">Description</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="tf.desc"
+          id="desc"
+          name="desc"
+        />
+      </div>
+  
+      <button type="submit" class="btn btn-primary">
+        Update
+      </button>
+    </form>
+  </form>
